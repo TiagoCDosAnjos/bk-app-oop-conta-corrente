@@ -166,10 +166,10 @@ Valor da transação, Tipo (crédito ou débito)
 
             //cliente.Conta 
             string extratoEsperado =
- @"####Extrato Cliente####
+@"####Extrato Cliente####
 Nome: George
 Sobrenome: Hamann
-CPF: 123.456.678-90
+CPF: 123.456.678 - 90
 ####Conta####
 Número da conta: 1
 Saldo: 666
@@ -189,7 +189,6 @@ Tipo: Debito
 
             //Assert
             Assert.Equivalent(resultadoExtrato, extratoEsperado);
-
         }
 
         /*Cenário: Visualização de Saldo
